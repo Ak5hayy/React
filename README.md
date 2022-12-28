@@ -1,1 +1,1 @@
-# react repo with all the code snippets learnt during learning React
+Repository with all the code snippets learnt during learning React
