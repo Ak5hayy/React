@@ -1,6 +1,10 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-//create and return react elements. At the end of the day react element is object
 const heading = React.createElement(
   "h1",
   {
@@ -28,7 +32,6 @@ const heading2 = React.createElement(
   "How are you?"
 );
 
-// Use Array when have to create/render more than 2 children/child react elements
 const container = React.createElement(
   "div",
   {
