@@ -1,43 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-const heading = React.createElement(
-  "h1",
-  {
-    id: "title",
-    className: "class",
-    style: {
-      fontSize: "28px",
-      fontWeight: "bold",
-    },
-  },
-  "Hello EveryOne!"
-);
-console.log(heading);
-
-const heading2 = React.createElement(
-  "h2",
-  {
-    id: "title",
-    className: "class",
-    style: {
-      fontSize: "24px",
-      fontWeight: "bold",
-    },
-  },
-  "How are you?"
-);
-
+/**
+ * <div class="header">
+      <h1>Welcome Home</h1>
+      <ul>
+        <li>About us</li>
+        <li>Support</li>
+        <li>Home</li>
+      </ul>
+    </div>
+ */
+// Using react.createElement =>
 const container = React.createElement(
   "div",
   {
-    id: "container",
+    className: "header",
   },
-  [heading, heading2]
+  [
+    React.createElement("h1", {}, "Welcome Home"),
+    React.createElement("ul", {}, [
+      React.createElement("li", {}, "About us"),
+      React.createElement("li", {}, "Support"),
+      React.createElement("li", {}, "Home"),
+    ]),
+  ]
 );
 
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);
