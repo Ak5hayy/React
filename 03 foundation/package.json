@@ -1,0 +1,30 @@
+{
+  "name": "03-foundation",
+  "version": "1.0.0",
+  "description": "learning jsx and other react terminologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ak5hayy/react.git"
+  },
+  "author": "Ak5hayy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ak5hayy/react/issues"
+  },
+  "homepage": "https://github.com/Ak5hayy/react#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
